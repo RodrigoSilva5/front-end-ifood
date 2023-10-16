@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajude a Causa</title>
+    <link rel="stylesheet" href="styles.css">    
+</head>
+<body>
+    <main>
+        <section>
+            <form action="http://localhost:3000/registro" method="post">
+    
+            <div>
+                <label for="nome">
+                    <p>
+                        Digite seu nome:
+                    </p>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome " required>
+                </label>
+            </div>
+            <div>
+                <label for="idade">
+                    <p>
+                        Digite sua idade:
+                    </p>
+                    <input type="number" name="idade" id="idade" placeholder="Digite sua idade" required>
+                </label>
+            </div>
+            <div>
+                <label for="email">
+                    <p>
+                        Digite seu E-mail:
+                    </p>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                </label>
+            </div>
+            <div >
+                <label for="camiseta">
+                    <p>
+                        Selecione o tamanho da camiseta:
+                    </p>
+                    <select name="camiseta" id="camiseta">
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                        <option value="XG">XG</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="categoria">
+                    <p>
+                        Categoria da inscrição:
+                    </p>
+                    <select name="categoria" id="categoria">
+                        <option value="3RUN">Corrida 3km [3RUN]</option>
+                        <option value="5RUN">Corrida 5km [5RUN]</option>
+                        <option value="4WALK">Caminhada 4km [4WALK]</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="valor">
+                    <p>
+                        Valor da doação:
+                    </p>
+                    <input type="number" name="valor" id="valor" placeholder="Digite o valor da doação" pattern="[0-9]+" required>
+                </label>
+            </div>
+    
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+            
+             </form>
+        </section>
+
+
+
+    </main>
+
+</body>
+</html>
