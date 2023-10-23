@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Pacifico&family=Poppins&family=Tilt+Neon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    behavior: smooth;
+}
+
+/* HEADER START */
+header{
+    display: grid;
+    background-image: url(./assets/nathan-dumlao-KixfBEdyp64-unsplash.jpg);
+    background-size:cover ;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Pacifico', cursive;
+}
+header > nav{
+    height: 10vh;
+}
+
+header > nav > ul{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr ;
+    margin: 0 10vw 0 10vw;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: bisque; */
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+header > nav > ul > li:nth-of-type(1){
+    font-size: 40px;
+}
+header > nav > ul > li > a> i {
+    font-size: 40px;
+    margin-right: 5px;
+}
+header > article{
+    height: 90vh;
+    margin: 0 10vw 10vw 10vw;
+    display: grid;
+    align-items: center;
+    width: 50%;
+}
+header > article > section{
+    height: 50%;
+}
+
+header > article > section .textbox {
+    height: 80%;
+}
+header > article > section .textbox > h1 {
+    font-size: xx-large;
+    color: white;
+
+}
+header > article > section .textbox > h2 {
+    font-size: smaller;
+    margin-top: 30px;
+    color: white;
+}
+header > article > section .buttons {
+    height: 20%;
+}
+header > article > section .buttons button{
+    border:0;
+}
+header > article > section .buttons button:nth-of-type(1){
+   width: 130px;
+   height: 50px;
+   color: white;
+   background-color: #6f4e38;
+
+}
+header > article > section .buttons button:nth-of-type(2){
+    width: 100px;
+   height: 50px;
+   margin-left: -0px;
+   color: #6f4e38;
+
+}
+
+/* HEADER END */
+
+/* MAIN START */
+main{
+    width: 100vw;
+    display: flex;
+    background-image: url(./assets/mike-kenneally-zlwDJoKTuA8-unsplash.jpg);
+    background-size:cover ;
+}
+ aside{
+    width: 40vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+aside > nav {
+    /* background-color: white; */
+    height: 80%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+aside > nav > ul {
+    list-style-type: none;
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+aside > nav > ul > li {
+    /* background-color: white; */
+    display: flex;
+    border-radius: 30px;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+    /*  */
+    box-shadow: 1px 1px 24px -10px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 1px 1px 24px -10px rgba(0,0,0,0.67);
+    -moz-box-shadow: 1px 1px 24px -10px rgba(0,0,0,0.67);
+    /*  */
+    transition: all 0.5s ease-out;
+}
+aside > nav > ul > li:nth-of-type(even){
+    color: white;
+    background-color: #6f4e38;
+}
+
+aside > nav > ul > li:nth-of-type(odd){
+    color: #6f4e38;
+    background-color: white;
+}
+aside > nav > ul > li:hover{
+    /* height: 20%; */
+    /* width: 120%; */
+    height: 10%;
+    transform: scale(1.1,1.1);
+}
+
+
+main > article:nth-of-type(1){
+    width: 60vw;
+    /* grid-area: article; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+main > article > section {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* overflow: hidden; */
+}
+/* -------------------------------------  */
+main > article > section > div {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    margin: 3px;
+    border-radius: 15px  ;  
+    transition: all 0.25s ease-out;
+}
+
+main > article > section > div:hover{
+    transform: scale(1.05,1.05);
+}
+main > article > section > div > figure{ 
+    /* width: 60%; */
+    height: 100%;
+}
+main > article > section > div > figure > img {
+    height: 100%;
+    object-fit: cover;
+    width: 200px;
+}
+/* -------------------------------------  */
+
+main > article > section > div > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main > article > section > div > section > p:nth-of-type(1){
+    font-size: xx-large;
+    color: #6f4e38;
+    font-family: 'Pacifico', cursive;
+}
+main > article > section > div > section > p:nth-of-type(2){
+    font-family: 'Poppins', sans-serif;
+    margin: 0 5px 0 5px;
+}
+
+main > article > section > div > section > button {
+    /* font-family: "Pacifico"; */
+    width: 130px;
+    height: 50px;
+    color: white;
+    background-color: #6f4e38;
+}
+
+/* MAIN END */
+
+/* article form start */
+
+#form-article{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./assets/mike-kenneally-TD4DBagg2wE-unsplash\(1\).jpg);
+    background-size:cover ;
+}
+#form-article > section {
+    width: 60%;
+    height: 80%;
+    border-radius: 20px;
+    background-color: white;
+    /*  */
+    box-shadow: 1px 1px 24px -10px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 1px 1px 24px -10px rgba(0,0,0,0.67);
+    -moz-box-shadow: 1px 1px 24px -10px rgba(0,0,0,0.67);
+    /*  */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.28);
+    /* border-radius: 12px; */
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#form-article > section > form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+}
+#form-article > section > form > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#form-article > section > form > div > input{
+    border-radius: 10px;
+    /*  */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.58);
+    /*  */
+    border: none;
+    width: 180px;
+    height: 20px;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+#form-article > section > form > div:nth-of-type(4) > input:hover, #form-article > section > form > div:nth-of-type(4) > input:focus{
+    height: 300px;
+}
+#form-article > section > form > div > input:hover, #form-article > section > form > div > input:focus{
+    width: 320px;
+    height: 30px;
+}
+#form-article > section > form > button{
+   width: 130px;
+   height: 50px;
+   color: white;
+   background-color: #6f4e38;
+    border: none;
+}
+/* article form end */
+#table-article{
+    width: 100vw;
+    height: 100vh;  
+    background-image: url(./assets/blake-verdoorn-gM-RfQsZK98-unsplash.jpg);
+    background-size:cover ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#table-article > section{
+    background-color: white;
+    width: 80%;
+    height: 40%;
+    border-radius: 20px;
+    /*  */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.58);
+    /*  */
+}
+#table-article > section > table {
+    width: 100%;
+    height: 80%;
+    color: #6f4e38;
+}
+
+#table-article > section > table > thead{
+    font-size: xx-large;
+    font-family:  'Pacifico', cursive;
+}
+#table-article > section > table > tbody{
+    font-size: x-large;
+    font-family: 'Poppins', sans-serif;
+}
+/* footer start */
+footer{
+    width: 100vw;
+    height: 20vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+footer > article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer  a {
+    color: white;
+    text-decoration: none;
+}
+
+/* footer end */
