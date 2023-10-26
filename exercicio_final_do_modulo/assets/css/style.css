@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+/* header start */
+header{
+    width: 100vw;
+    height: 100vh;
+}
+header > nav{
+    background-color: #f7f7f7;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    /* display: flex; */
+    height: 15vh;
+}
+header > nav > ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 10vw 0 10vw;
+}
+header > nav > ul > li > a{
+    color: red;
+}
+header > nav > ul > li:last-of-type{
+    display: none;
+    color: red;
+    font-size: 35px;
+}
+header > nav > ul > li, header > nav > ul > li > a{ 
+    text-decoration: none;
+}
+/* menu barra escondido na tela grande */
+header > nav > ul > li:nth-of-type(2) {
+    display: none;
+}
+header>article{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/imagens/brooke-lark-08bOYnH_r_E-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    header > nav > ul > li:nth-of-type(1),header > nav > ul > li:nth-of-type(2)  {
+        display: flex;
+    }
+    .fa-solid{
+        font-size: 35px;
+        color: red;
+    }
+    header > nav > ul > li {
+        display: none;
+    }
+}
+
+.ulMobile {
+    background-color: #f7f7f7;
+    justify-content: space-around;
+    height: 100vh;
+}
+/* header end */
+
+/* main start */
+@media screen and (max-width: 500px ) {
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    } 
+    main > article {
+    display: flex;
+    flex-direction: column;
+}
+}
+main{ 
+    width: 100vw;
+    /* height: 200vh; */
+    background-image: url(/assets/imagens/brooke-lark-08bOYnH_r_E-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    /* overflow: hidden; */
+    flex-direction: column;
+}
+
+main > article > article{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+main > article {
+    display: flex;
+    justify-content: space-around;
+}
+.btn-danger{
+    color: red;
+}
+.form-article{
+    /* background-color: aliceblue; */
+    height: 90vh;
+}
+.form-section{
+    /* background-color: antiquewhite; */
+    height: 80%;
+    width: 70vw;
+    
+    /*  */
+    backdrop-filter: blur(4px) saturate(86%);
+    -webkit-backdrop-filter: blur(4px) saturate(86%);
+    background-color: rgba(255, 255, 255, 0.68);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.form-section > form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form-section > form > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
+.form-section > form > div > input {
+    backdrop-filter: blur(4px) saturate(86%);
+    -webkit-backdrop-filter: blur(4px) saturate(86%);
+    background-color: rgba(245, 0, 0, 0.303);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+/* footer start */
+/* mobile */
+@media screen and (max-width: 500px ) {
+    footer {
+        background-color: aqua;
+        /* height: 100vh; */
+        flex-direction: column;
+        justify-content: space-between;
+    }   
+
+    footer ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-bottom: 2px solid black;
+        align-items: center;
+        padding: 0;
+        
+    }
+    footer ul > li {
+        /* background-color: black; */
+        margin: 10px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 500px ){
+    footer {
+        background-color: beige;
+        height: 30vh;
+    }
+}     
+
+footer {
+    background-color: #fff;
+    display: flex;
+}
+
+footer ul {
+    list-style: none;
+    /* background-color: aquamarine; */
+    height: 100%;
+    display: flex;
+}
+
+
+
+/* footer end  */
+/* main end  */
